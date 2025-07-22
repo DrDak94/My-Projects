@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: black;
+}
+.text {
+  font-size: 150px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(
+    135deg,
+    #5335cf 0,
+    #de005e 25%,
+    #f66e48 40%,
+    #28da6c 60%,
+    #2034e7 80%,
+    #5335cf 100%
+  );
+  background-size: 400%;
+  background-clip: text;
+  --webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 12s linear infinite;
+}
+@keyframes animate {
+  100% {
+    background-position: 400%;
+  }
+}
