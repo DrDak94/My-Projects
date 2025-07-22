@@ -1,0 +1,66 @@
+/* Khaki Color Palette */
+:root {
+  --khaki-bg: #d97757;
+  --khaki-dark: #764939;
+  --text-color: #111;
+  --dark-bg: #0d1117;
+  --button-hover: #955844;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+body {
+  font-family: "Share Tech Mono", monospace;
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: var(--khaki-bg);
+  padding: 40px 50px;
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  max-width: 360px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: #222;
+  font-size: 2rem;
+}
+
+#timer {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  color: #111;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  background: var(--khaki-dark);
+  color: #111;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buttons button:hover {
+  background: var(--button-hover);
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
