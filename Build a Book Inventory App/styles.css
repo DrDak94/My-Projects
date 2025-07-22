@@ -1,0 +1,71 @@
+/* Set all spans to inline-block */
+span {
+  display: inline-block;
+}
+
+/* ✅ Attribute selector for rows with class of read */
+tr[class="read"] {
+  background-image: linear-gradient(to right, #e0ffe0, #b2fab4);
+}
+
+/* ✅ Attribute selector for rows with class of to-read */
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #fff3cd, #ffeeba);
+}
+
+/* ✅ Attribute selector for rows with class of in-progress */
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #d0e2ff, #cce5ff);
+}
+
+/* ✅ Attribute selectors for .status inside each row type */
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid #e0a800;
+  background-image: linear-gradient(to right, #fff8dc, #ffeeba);
+}
+
+tr[class="read"] span[class="status"] {
+  border: 1px solid #28a745;
+  background-image: linear-gradient(to right, #d4edda, #c3e6cb);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid #007bff;
+  background-image: linear-gradient(to right, #cce5ff, #b8daff);
+}
+
+/* ✅ Attribute selector for span.status and span whose class starts with 'rate' */
+span[class="status"],
+span[class^="rate"] {
+  height: 25px;
+  width: auto;
+  padding: 3px;
+}
+
+/* ✅ Inner spans inside rate spans */
+span[class^="rate"] > span {
+  border: 1px solid #999;
+  border-radius: 50%;
+  margin: 2px;
+  height: 15px;
+  width: 15px;
+  background-color: #e0e0e0;
+}
+
+/* ✅ Rating backgrounds using attribute selectors */
+
+/* ONE star filled */
+span[class~="one"] > span:nth-child(1) {
+  background-image: linear-gradient(to bottom, #ffc107, #ffca2c);
+}
+
+/* TWO stars filled */
+span[class~="two"] > span:nth-child(1),
+span[class~="two"] > span:nth-child(2) {
+  background-image: linear-gradient(to bottom, #ffc107, #ffca2c);
+}
+
+/* THREE stars filled */
+span[class~="three"] > span {
+  background-image: linear-gradient(to bottom, #ffc107, #ffca2c);
+}
