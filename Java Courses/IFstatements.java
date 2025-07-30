@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class IFstatements {
     public static void main(String[] args) {
 
-        // IF Statements = performs a block of code if its condition is true.
+        // IF Statement = performs a block of code if its condition is true.
 
         Scanner scanner = new Scanner(System.in);
 

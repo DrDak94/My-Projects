@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class WhileLoops {
     public static void main(String[] args){
 
-        // While Loops = repeat some code forever while some condition remains true.
+        // While Loop = repeat some code forever while some condition remains true.
 
        Scanner scanner = new Scanner(System.in);
 
