@@ -1,0 +1,10 @@
+apple
+orange
+banana
+coconut
+pineapple
+grape
+lemon
+horse
+washing
+clear
